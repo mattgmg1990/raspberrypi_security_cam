@@ -27,10 +27,15 @@ email_on_motion.py will send an email to the addresses you configure that includ
 To configure email_on_motion.py, just set the following constants in the file:
 
 `MOTION_OUTPUT_DIRECTORY`: The directory where motion is outputting images.
+
 `SMTP_SERVER`: The email server that will be sending the outgoing emails. (String)
+
 `FROM_ADDRESS`: The email address you will send the messages from. (String)
+
 `TO_ADDRESSES`: A list of email addresses to send the email message to (List of Strings)
+
 `USERNAME`: The username for the email server that will send the emails (String)
+
 `PASSWORD`: The password for the email server (String)
 
 In motion.conf (I have published mine as an example), just configure on_motion_detected to trigger the script. Adding "gap 10" after will delay 10 seconds before sending the email (ensuring the image has been captured and saved):
