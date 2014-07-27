@@ -25,7 +25,7 @@ def create_message():
     msg['From'] = 'The Pi'
     msg['To'] = COMMASPACE.join(TO_ADDRESSES)
     msg.preamble = "Motion was detected by the security camera."
-    msg_text = MIMEText("Motion was detected by the security camera. Please see the attached pictures, or check the live feed at: http://pi.mattgarnes.com:8081.")
+    msg_text = MIMEText("Motion was detected by the security camera. Please see the attached pictures, or check the live feed at: http://your.website.com:8081.")
     msg.attach(msg_text)
 
     # Get the last image taken and attach it
